@@ -91,12 +91,6 @@ async def lastfive(message: types.Message):
 async def commands_start(message : types.Message):
         await message.reply('Команди бота: \n/start \n/help \nТелеграм розробника: @RichDoc888 \nПосилання на бота: https://t.me/YBpersonalbot')
 
-# @dp.message_handler(commands=['news'])
-# async def commands_start(message : types.Message):
-#     await bot.send_message(message.from_user.id, ' '.join(info[0:5]))
-
-
-# ----------------------ADMIN 
 
 # ----------------------GENERAL
 
@@ -111,5 +105,3 @@ if __name__ == '__main__':
         host=WEBAPP_HOST,
         port=WEBAPP_PORT,
     )
-
-# executor.start_polling(dp, skip_updates=True, on_startup=on_startup)
